@@ -74,7 +74,7 @@ $(document).ready(function()
         exp_karen = parseInt(getCookie("exp_karen"));
     }
 
-    if (getCookie("exp_selphie") == null {
+    if (getCookie("exp_selphie") == null) {
         document.cookie = "exp_selphie=-1;";
     } else {
         exp_selphie = parseInt(getCookie("exp_selphie"));
@@ -477,6 +477,7 @@ function checkFighter() {
         $('#avatar').attr('src', 'img/set/karen.gif');  
     } else if (current_fighter == "selphie") {
         $('#avatar').attr('src', 'img/set/selphie.gif');
+	}
 }
     
 
